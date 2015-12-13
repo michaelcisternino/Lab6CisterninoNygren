@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 13, 2014 2:49:57 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="domain.GameRuleDomainModel" table="tblRule">
+
+		<id name="RULEID" type="int">
+			<column name="RULEID" length="5" />
+		</id>
+
+		<property name="RULENAME" type="string">
+			<column name="RULENAME" length="20" not-null="true" />
+		</property>
+
+		<property name="MAXNUMBEROFPLAYERS" type="int">
+			<column name="MAXNUMBEROFPLAYERS" length="2" not-null="true" />
+		</property>
+
+
+		<property name="PLAYERNUMBEROFCARDS" type="int">
+			<column name="PLAYERNUMBEROFCARDS" length="2" not-null="true" />
+		</property>
+
+		<property name="NUMBEROFJOKERS" type="int">
+			<column name="NUMBEROFJOKERS" length="2" not-null="true" />
+		</property>
+
+		<property name="PLAYERCARDSMIN" type="int">
+			<column name="PLAYERCARDSMIN" length="2" not-null="true" />
+		</property>
+
+		<property name="PLAYERCARDSMAX" type="int">
+			<column name="PLAYERCARDSMAX" length="2" not-null="true" />
+		</property>
+
+		<property name="COMMUNITYCARDSMIN" type="int">
+			<column name="COMMUNITYCARDSMIN" length="2" not-null="true" />
+		</property>
+
+		<property name="COMMUNITYCARDSMAX" type="int">
+			<column name="COMMUNITYCARDSMAX" length="2" not-null="true" />
+		</property>
+
+		<property name="POSSIBLEHANDCOMBINATIONS" type="int">
+			<column name="POSSIBLEHANDCOMBINATIONS" length="2" not-null="true" />
+		</property>
+
+		<property name="DEFAULTGAME" type="int">
+			<column name="DEFAULTGAME" length="2" not-null="true" />
+		</property>
+	</class>
+</hibernate-mapping>

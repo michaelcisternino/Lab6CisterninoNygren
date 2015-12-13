@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 13, 2014 2:49:57 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="domain.GameRuleCardsDomainModel" table="tblRuleCards">
+
+		<composite-id>
+			<key-property name="RULEID" column="RULEID" length="5" />
+			<key-property name="RULECARDID" column="RULECARDID" length="2" />
+		</composite-id>
+
+		<property name="NBROFCARDS" type="int">
+			<column name="NBROFCARDS" length="2" not-null="true" />
+		</property>
+
+		<property name="PICKORDER" type="int">
+			<column name="PICKORDER" length="2" not-null="true" />
+		</property>
+
+	</class>
+</hibernate-mapping>
